@@ -1,4 +1,4 @@
-import { Button } from "react-bootstrap"
+
 import { BotaoContext } from "../providers/BotaoContext";
 import { useContext } from "react";
 
@@ -13,7 +13,7 @@ const BotaoAcao = ({texto}) => {
     return(
         <>
          <div className="flex items-center justify-center md:pt-12 mt-8 sm:mt-0">
-          <Button onClick={mostrarFormulario} className='
+          <button onClick={mostrarFormulario} className='
                 bg-primary-orange 
                 text-white 
                 rounded-full
@@ -26,12 +26,10 @@ const BotaoAcao = ({texto}) => {
                 hover:scale-110
                 hover:bg-primary-focus duration-300
                 ' 
-                
-                variant="primary" 
                 type="submit"
                 >                   
                  {texto}    
-            </Button>
+            </button>
           </div> 
         </>
     )

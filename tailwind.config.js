@@ -5,16 +5,19 @@ module.exports = {
   ],
   theme: {
     backgroundImage: {
-      'img_bg_fundo':"url('../assets/fundo1.jpeg')",
+      'img_bg_fundo':"url('../assets/fundo1.png')",
       'img_bg_fundo2':"url('../assets/fundoBranco2.png')",
-      'img_bg_fundotec': "url('../assets/fundoTec.png')",
+      'img_bg_fundo3': "url('../assets/fundo2.png')",
       'img_bg_brservice' : "url('../assets/bgcamilhao.jpeg')"
     },
     extend: {
+      fontFamily: {
+        'hanken-grotesk': ['Hanken Grotesk', 'sans-serif'],
+      },
       colors:{
         'primary-blue':'#004773',
-        'azul-claro':'#0a83ca',
-        'azul-escuro':'#030f40',
+        'amarelo-claro':'#FBFFA5',
+        'marron':'#6F200D',
         'azul-bemescuro':'#030514',
         'primary-orange':'#f47f15',
         'primary-focus':'#ec4000',
@@ -52,7 +55,7 @@ module.exports = {
         'wiggle_1s_ease-in-out_infinite': 'wiggle 1s ease-in-out infinite',
         'slide-down-05': 'slideDown 0.6s linear',
         'slide-down-08': 'slideDown 0.8s linear',
-        'slide-Left-05': 'slideLeft 0.8s linear',
+        'slide-Left-05': 'slideLeft 0.5s linear',
         'slide-Rigth-08': 'slideRigth 0.8s linear',
         'slide-Gira': 'slideGira 0.8s ease-in-out infinite',
       },

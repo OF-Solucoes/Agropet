@@ -1,6 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import 'animate.css/animate.min.css';
-import casal from '../assets/casal.png'
+import logo from '../assets/logo.png'
+import pets from '../assets/pets.png'
+import patas from '../assets/patas.png'
 import Beneficio from '../components/Beneficio';
 
 const Beneficios = () => {
@@ -41,30 +43,28 @@ const Beneficios = () => {
 
     <section  className='md:p-12' >
         <div className="flex flex-col sm:flex-row items-center justify-center">
-            <div  className="max-w-[408px] "  >
-            <div  className={`max-w-[408px] pt-5 duration-1000 ml-4 hidden sm:block 
-                    animate__animated ${showAnimation ? 'animate-slide-Left-05' : ''}`}>
+            <div  className="max-w-[508px] "  >
+            <div  className={`max-w-[508px] pt-5 rounded-3xl duration-1000 ml-4 sm:block 
+                    `}>
                         
-                        <img ref={item} src={casal} alt='logo' />
+                        <img ref={item} src={logo} alt='logo' className={`mx-auto 
+                        animate__animated ${showAnimation ? 'animate-slide-Left-05' : ''}`} />
+                        <p className={`text-center p-2 text-2xl text-marron
+                             animate__animated ${showAnimation ? 'animate-slide-Left-05' : ''}`}>
+                          Bem-vindo à Agropet Conceição! Oferecemos uma ampla seleção
+                          de produtos para pets, incluindo rações nutritivas e acessórios essenciais. 
+                          Nosso compromisso é proporcionar uma experiência de compra excepcional, 
+                          cuidando do bem-estar e da felicidade do seu companheiro peludo. 
+                          Descubra como podemos fazer a diferença na vida do seu pet!  
+
+                        </p>
+                        <img ref={item} src={patas} alt='patas' className='float-right ml-1 hidden sm:block' />
                     </div>             
             </div>
         
-            <div className={`max-w-[408px]  rounded-3xl  shadow-2xl p-6 animate__animated ${showAnimation ? 'animate-slide-Rigth-08' : ''}`}>
+            <div className={`max-w-[608px] l p-6 animate__animated ${showAnimation ? 'animate-slide-Rigth-08' : ''}`}>
                 
-                <Beneficio 
-                    titulo='Maximize Sua Presença Online:'
-                    texto = 'Utilize nossas estratégias avançadas de tráfego pago para garantir que sua empresa seja vista pelos clientes certos, no momento certo'
-                />
-
-                <Beneficio 
-                    titulo='Conquiste Clientes de Qualidade:'
-                    texto = 'Dirija sua campanha de marketing diretamente para seu público-alvo, aumentando suas chances de gerar leads qualificados e aumentar suas vendas.'
-                />
-
-                <Beneficio 
-                    titulo='Alcance Novos Patamares de Vendas:'
-                    texto = 'Experimente um aumento significativo nas conversões e no crescimento das vendas com campanhas de publicidade online feitas sob medida para o seu negócio.'
-                />
+            <img ref={item} src={pets} alt='logo'  />
             </div>    
                                   
         </div>

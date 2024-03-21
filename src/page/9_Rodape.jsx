@@ -7,7 +7,7 @@ const Rodape = () => {
 
     return (
         <>
-         <div className='flex flex-col p-5 sm:flex-row items-center justify-center bg-azul-bemescuro'>
+         <div className='flex flex-col p-5 sm:flex-row items-center justify-center bg-marron'>
                 <div className='flex'>
                     <img className="logo" src={logo} alt="Logo da empresa"/>  
                 </div> 

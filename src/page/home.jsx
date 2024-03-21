@@ -5,6 +5,7 @@ import Estrategias from './3_Estrategias';
 import Promocao from './8_Promocao';
 import Rodape from './9_Rodape'
 import logo from '../assets/logobranca.jpg'
+import ControlledCarousel from '../components/carrocell';
 
 
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
@@ -18,7 +19,7 @@ function Home() {
       <body className="w-full h-full bg-img_bg_fundo2 bg-no-repeat bg-center bg-cover">
             <Beneficios/>
             <Estrategias/>
-            <Promocao/>
+            {/* <Promocao/> */}
             <Rodape/>
             <FloatingWhatsApp
         phoneNumber="5573981198153"
