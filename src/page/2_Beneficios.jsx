@@ -14,7 +14,7 @@ const Beneficios = () => {
         function handleOpenScollAnimation() {
             const rect = item.current.getBoundingClientRect();
 
-            if (rect.y + 300 <= (window.innerHeight || document.documentElement.clientHeight)) {
+            if (rect.y - 300 <= (window.innerHeight || document.documentElement.clientHeight)) {
                 setShowAnimation(true);
                 window.removeEventListener('scroll', handleOpenScollAnimation);
             }

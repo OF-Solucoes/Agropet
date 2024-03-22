@@ -26,13 +26,13 @@ const Promessas = () =>{
         <div className="flex flex-col sm:flex-row items-center justify-center ">
             <div className="max-w-[508px] md:mr-20">
             <img  src={logo} alt='logo' />
-            <h1 className="font-hanken-grotesk text-white text-2xl font-bold text-justify  
+            <h1 className="font-hanken-grotesk mr-4 ml-4 text-white text-2xl font-bold text-justify  
             animate-slide-down-05">
                     Aqui você encontra uma Variedade de produtos Exclusivos e de Alta Qualidade para seus Pets, com atendimento excepcional e experiência de compra segura.
                     </h1>
                     <br/>
                     <br/>
-                    <h1 className="font-hanken-grotesk text-amarelo-claro text-2xl font-bold text-justify  
+                    <h1 className="font-hanken-grotesk mr-4 ml-4 text-amarelo-claro text-2xl font-bold text-justify  
             animate-slide-down-05">
                     Cadastre-se e ganhe descontos exclusivos!
                     </h1>

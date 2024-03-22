@@ -5,7 +5,7 @@ import Estrategias from './3_Estrategias';
 import Promocao from './8_Promocao';
 import Rodape from './9_Rodape'
 import logo from '../assets/logobranca.jpg'
-import ControlledCarousel from '../components/carrocell';
+import ControlledCarousel from '../components/carrosselracao';
 
 
 import { FloatingWhatsApp } from 'react-floating-whatsapp'
