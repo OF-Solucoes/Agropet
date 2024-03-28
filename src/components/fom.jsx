@@ -1,17 +1,11 @@
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
 import { useForm } from 'react-hook-form'
 import * as yup from 'yup'
 import { yupResolver } from "@hookform/resolvers/yup"
 import InputCadastro from './inputForm';
-import  presente  from '../assets/presente.png'
 import { useContext, useState } from 'react';
-import CupomBrservice from './cupom';
-import api from '../service/api';
 import { LeadContext } from '../providers/leadContext';
 import { toast } from 'react-toastify';
-import logo from '../assets/agropet.png'
-
+import CupomAgropet from './cupom';
 
 
 const schema = yup.object({
@@ -43,21 +37,21 @@ const Formulario = () => {
       observ:`Sem comentários`,
     }
     
-    if(await retornoUmLead(telefone)){
-    toast.error(
-      "Ops! Parece que você já resgatou seu cupom e está participando da nossa promoção. Se precisar de ajuda ou tiver dúvidas, entre em contato conosco."
-    )
-    } else {
-    createLead(2, lead)
+    // if(await retornoUmLead(telefone)){
+    // toast.error(
+    //   "Ops! Parece que você já resgatou seu cupom e está participando da nossa promoção. Se precisar de ajuda ou tiver dúvidas, entre em contato conosco."
+    // )
+    // } else {
+    // createLead(2, lead)
     setNome(nome) 
     setCupom(true)
-    }
+    // }
   }
 
     return(
       <>
       {cupom?
-      <CupomBrservice nome={nome}/>
+      <CupomAgropet nome={nome}/>
       :
       <form onSubmit={handleSubmit(handleRegister)} className='"transition ease-in-out delay-150
       bg-white bg-opacity-80 
@@ -77,7 +71,7 @@ const Formulario = () => {
       <fieldset title='trdtyd'> 
       <div className="mb-3">
              <InputCadastro
-             label="Nome"
+             label="Nome*"
              id="Nome"
              type="text" 
              placeholder='Seu nome' 
@@ -90,7 +84,7 @@ const Formulario = () => {
          </div>
          <div className="mb-3">
              <InputCadastro
-             label="Telefone"
+             label="Telefone*"
              id="telefone"
              type="text" 
              placeholder='(DD)9XXXX-XXXX' 

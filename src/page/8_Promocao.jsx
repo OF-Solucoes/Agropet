@@ -1,9 +1,4 @@
-import foguete from '../assets/foguete.png'
-import trafegopago from '../assets/trafegopago.png'
-import casal from '../assets/casal.png'
-import { Button } from 'react-bootstrap'
 import { useContext, useRef, useState } from 'react'
-import FormPipefy from '../components/formPipefy'
 import BotaoAcao from '../components/botaoAcao'
 import { BotaoContext, useScroll } from '../providers/BotaoContext'
 import promo1 from '../assets/Promo1.png'
@@ -48,7 +43,7 @@ const Promocao = ( ) => {
                                             ">Nossas ofertas imperdíveis! </h3>
                                  
                     <div className="flex flex-col xl:flex-row items-center justify-center
-                                    pt-5 sm:pl-12 sm:ml-12 max-w-[300px] ml-4 ">
+                                    pt-5 sm:p-8 sm:m-2 max-w-[300px] ml-4 ">
                               <img className='rounded-full  shadow-2x  bg-marron' src={promo1} alt='logo' />
                                <img className='rounded-full  shadow-2xl  bg-marron' src={promo2} alt='logo' />
                                <img className='rounded-full shadow-2xl bg-marron' src={promo3} alt='logo' />
