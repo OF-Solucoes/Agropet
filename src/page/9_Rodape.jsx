@@ -14,20 +14,20 @@ const Rodape = () => {
                 <div className='flex flex-col pl-7 ml-5'>
                     <div className='flex items-left justify-left'>
                         <img className='isnta' src={insta} alt='instagram'/>
-                        <p onClick={() =>  window.open("https://www.instagram.com/alilocalads/", "_black")} className='p-1 text-white cursor-pointer hover:scale-110  hover:text-primary-focus duration-300'>
-                            alilocalads
+                        <p onClick={() =>  window.open("https://www.instagram.com/agropet_conceicao/", "_black")} className='p-1 text-white cursor-pointer hover:scale-110  hover:text-primary-focus duration-300'>
+                            Agropet
                             </p>
                     </div>
                     <div className='flex items-left justify-left'>
                         <img className='isnta' src={zap} alt='whatssap'/>
-                        <p onClick={() =>  window.open("http://wa.me/5573981198153", "_black")} className='p-1 text-white cursor-pointer hover:scale-110  hover:text-primary-focus duration-300'>
-                            (73) 98119-8153
+                        <p onClick={() =>  window.open("http://wa.me/5573991426666", "_black")} className='p-1 text-white cursor-pointer hover:scale-110  hover:text-primary-focus duration-300'>
+                            (73) 99142-6666
                         </p>
                     </div>
-                    <div className=' flex items-left justify-left'>
+                    {/* <div className=' flex items-left justify-left'>
                         <img className='isnta' src={email} alt='email'/>
                         <p className='p-1 text-white'>contado@aliads.com.br</p>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </>

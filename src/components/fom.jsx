@@ -10,6 +10,7 @@ import CupomBrservice from './cupom';
 import api from '../service/api';
 import { LeadContext } from '../providers/leadContext';
 import { toast } from 'react-toastify';
+import logo from '../assets/agropet.png'
 
 
 
@@ -64,18 +65,15 @@ const Formulario = () => {
       text-primary-black
       text-1xl 
       rounded-[5%] 
-      p-4 md:pt-1
+      p-4 md:p-1 mb-5
       md: w-[300px]
       font-bold text-cente
       '>
-         <img src={presente} alt='presente' className='flex items-center justify-center mt-[-40px]'/>
-      <h2 className="flex items-center justify-center text-center text-2xl text-azul-escuro">
-        <strong> Temos um presente especial para você. </strong>  
-       </h2> 
-     
-     <h2 className="flex items-center justify-center text-center text-1xl text-gray-600">
-       <strong> Cadastre-se agora e garanta seu DESCONTO EXCLUSIVO!!!</strong> 
-     </h2> 
+        <h5 className="font-hanken-grotesk mr-4 ml-4 text-marron text-1xl font-bold text-center  
+            animate-slide-down-05">
+                    Registre-se aqui para receber nossas promoções!
+                    </h5>
+    
       <fieldset title='trdtyd'> 
       <div className="mb-3">
              <InputCadastro
@@ -103,7 +101,7 @@ const Formulario = () => {
              error={errors.telefone?.message}
              />
          </div>
-         {/* <div className="mb-3">
+         <div className="mb-3">
              <InputCadastro
              label="Email"
              id="email"
@@ -115,7 +113,7 @@ const Formulario = () => {
              aria-describedby="emailHelp"
              error={errors.email?.message}
              />
-         </div> */}
+         </div>
       </fieldset>
        <br/>
        
@@ -135,7 +133,7 @@ const Formulario = () => {
                                           background: 'linear-gradient(to right, #FF8C00, #FFA500)'
                                           }}>
                                         
-                    Quero meu desconto!
+                    Enviar
                 </button>
      </form>
     }

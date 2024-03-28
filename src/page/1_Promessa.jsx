@@ -5,6 +5,7 @@ import  promImg  from '../assets/cachorro2.png'
 import  DELIVERY  from '../assets/DELIVERY.png'
 import BotaoAcao from '../components/botaoAcao'
 import { BotaoContext } from '../providers/BotaoContext';
+import Formulario from '../components/fom';
 
 const Promessas = () =>{
 
@@ -34,12 +35,12 @@ const Promessas = () =>{
                     <br/>
                     <h1 className="font-hanken-grotesk mr-4 ml-4 text-amarelo-claro text-2xl font-bold text-justify  
             animate-slide-down-05">
-                    Cadastre-se e ganhe descontos exclusivos!
+                    Registre-se agora e seja o primeiro a receber nossas exclusivas promoções!
                     </h1>
-                  <BotaoAcao texto={showModal ? 'Fechar formulário':"QUERO DESCONTO!"}/>
+                  <BotaoAcao texto="Quero promoções" />
        <div className="flex flex-row  items-center justify-center ">
         </div >
-                
+           
             </div>
             
             <div className={`max-w-[508px] pt-5 duration-1000 md: ml-20 hidden sm:block ${animate ? 'animate-pulse' : ''}`}>

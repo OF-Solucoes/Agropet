@@ -6,6 +6,13 @@ import { useContext, useRef, useState } from 'react'
 import FormPipefy from '../components/formPipefy'
 import BotaoAcao from '../components/botaoAcao'
 import { BotaoContext, useScroll } from '../providers/BotaoContext'
+import promo1 from '../assets/Promo1.png'
+import promo2 from '../assets/Promo2.png'
+import promo3 from '../assets/Promo3.png'
+import promo4 from '../assets/Promo4.png'
+import promo5 from '../assets/Promo5.png'
+import Formulario from '../components/fom'
+
 
 const Promocao = ( ) => {
 
@@ -33,60 +40,64 @@ const Promocao = ( ) => {
                      <div className="max-w-[408px]  rounded-md ">
                            
                              <div className="flex flex-col sm:flex-col items-center justify-center">
-                                    <h3 className="text-primary-blue
-                                            text-2xl 
+                                    <h3 className="text-primary-orange
+                                            text-3xl 
                                             font-bold text-justify
                                             p-1 md:p-4
                                            
-                                            ">Pronto para levar o seu negócio ao próximo nível? </h3>
-                                               
-                                   <h3 className="text-primary-orange
+                                            ">Nossas ofertas imperdíveis! </h3>
+                                 
+                    <div className="flex flex-col xl:flex-row items-center justify-center
+                                    pt-5 sm:pl-12 sm:ml-12 max-w-[300px] ml-4 ">
+                              <img className='rounded-full  shadow-2x  bg-marron' src={promo1} alt='logo' />
+                               <img className='rounded-full  shadow-2xl  bg-marron' src={promo2} alt='logo' />
+                               <img className='rounded-full shadow-2xl bg-marron' src={promo3} alt='logo' />
+                               <img className='rounded-full  shadow-2xl bg-marron' src={promo4} alt='logo' />
+                               <img className='rounded-full shadow-2xl bg-marron' src={promo5} alt='logo' />
+                               
+                     </div >   
+{/*                                                
+                                   <h3 className="text-marron
                                             text-3xl 
-                                            font-bold text-justify
-                                            p-1 md:pt-4 md:ml-12
+                                            font-bold text-center
+                                            p-3 md:pt-4 md:ml-12
                                            
-                                            ">Comece agora! </h3>          
+                                            ">últimas unidades de nossas rações em promoção!  </h3>           */}
                              </div>                
 
                     </div>    
-
-                    <div className=" pt-5 sm:pl-12 sm:ml-12 duration-1000 max-w-[408px] ml-4 hidden sm:block">
-                                <img src={foguete} alt='logo' />
-                     </div >          
+       
             </div  > 
+            <h3 ref={formRef} className="text-marron text-3xl font-bold text-center p-5 md:p-4">
+            últimas unidades de nossas rações em promoção!
+               </h3> 
 
-            {showModal?
-            <h2 ref={formRef} className="text-primary-blue text-2xl font-bold text-center p-2 md:p-4">
-            Por favor, preencha o formulário e nossa equipe entrará em contato o mais breve possível!
-            </h2> 
-            :
-            <h2 ref={formRef} className="text-primary-blue text-2xl font-bold text-center p-2 md:p-4">
-               Clique no botão abaixo e ganhe o 1º mês gratis com nossos especialistas!
+            <h2 ref={formRef} className="text-primary-orange text-2xl font-bold text-center p-2 md:p-4">
+               Peça agora e ganhe Delivery Grátis!!
                </h2> 
-            }
+             
+      
    
  
-    <BotaoAcao texto= {showModal ? 'Fechar formulário': 'Quero meu 1º mês gratis'}/>
                                 <div>
-      < FormPipefy />
+
     </div>
 
+    <BotaoAcao texto='Falar com o vendedor'/>
                                 <div className="flex flex-col sm:flex-row items-center justify-center ">
            
-            <div className=" pt-5 duration-1000 max-w-[408px] ml-4 hidden sm:block">
-                <img src={trafegopago} alt='logo' />
-            </div> 
+            
             <div className="max-w-[408px]">
-            <h2 className="text-primary-orange
-                               text-2xl 
+            <p className="text-marron
+                               text-1xl 
                                font-bold text-center
                                p-2 md:p-4 
                                
-                               ">Descubra como a ALI pode impulsionar o sucesso do seu negócio.</h2>  
+                               ">*Consultar disponibilidade do delivery para seu bairro.</p>  
             </div>
-            
        </div >
       
+            <Formulario/>
                                  
     </section>
  )

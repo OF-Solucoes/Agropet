@@ -12,7 +12,7 @@ const BotaoAcao = ({texto}) => {
 
     return(
         <>
-         <div className="flex items-center justify-center md:pt-12 mt-8 sm:mt-0">
+         <div className="flex items-center justify-center md:pt-2 mt-0 ">
           <button onClick={mostrarFormulario} className='
                 bg-primary-orange 
                 text-white 
