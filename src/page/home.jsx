@@ -21,6 +21,7 @@ function Home() {
             <Promocao/>
             <Rodape/>
             <FloatingWhatsApp
+        id="zap"    
         phoneNumber="5573991426666"
         accountName="Agropet"
         allowEsc

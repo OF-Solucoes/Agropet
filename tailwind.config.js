@@ -8,7 +8,8 @@ module.exports = {
       'img_bg_fundo':"url('../assets/fundo1.png')",
       'img_bg_fundo2':"url('../assets/fundoBranco2.png')",
       'img_bg_fundo3': "url('../assets/fundo2.png')",
-      'img_bg_brservice' : "url('../assets/bgcamilhao.jpeg')"
+      'img_bg_brservice' : "url('../assets/bgcamilhao.jpeg')",
+      'img_bg_footer': "url('../assets/bgfooter.png')",  
     },
     extend: {
       fontFamily: {
@@ -16,6 +17,7 @@ module.exports = {
       },
       colors:{
         'primary-blue':'#004773',
+        'azulfooter':'#1E98E6',
         'amarelo-claro':'#FBFFA5',
         'marron':'#6F200D',
         'azul-bemescuro':'#030514',
