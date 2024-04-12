@@ -13,13 +13,16 @@ const Rodape = () => {
                 </div> 
                 <div className='flex flex-col items-center justify-center'>
                     <div>
-                        <p  className='font-hanken-grotesk m-2 text-white text-5xl outline-black'>
+                        <p  className='font-hanken-grotesk text-white text-5xl'>
                         FRETE GRÁTIS  
+                        </p>
+                        <p  className='font-hanken-grotesk text-white text-1xl'>
+                        *consultar disponibilidade para seu bairro  
                         </p>
                     </div>
                     <div>
-                        <p className='font-hanken-grotesk text-white text-center text-3xl bg-azulfooter'>
-                         Produtos com até 50% de desconto 
+                        <p className='font-hanken-grotesk mt-6 text-white text-center text-3xl bg-azulfooter'>
+                         Produtos com até 20% de desconto 
                         </p>
                     </div>
                 </div> 
