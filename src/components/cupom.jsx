@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import  presente  from '../assets/obrigado.png'
-import  tickt  from '../assets/tiquet.jpeg'
+
 
 import { format, addDays } from 'date-fns';
 

@@ -1,7 +1,5 @@
 import pets from '../assets/petsfooter.png'
-import insta from '../assets/insta.png'
-import zap from '../assets/zap.png'
-import email from '../assets/email.png'
+
 
 const Rodape = () => {
 
