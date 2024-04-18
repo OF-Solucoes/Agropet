@@ -8,17 +8,18 @@ export const LeadContext = createContext({})
 export const LeadProvider = ({children})=>{
 
     const createLead = async (idCampanha, formData) => {
-        
+       
         try {
             const { data } = await api.post(
                 `lead/${idCampanha}`,
                 {...formData},
             )
             
+            
             return data
             
         } catch (error) {
-            toast.error("tente mais tarde!")
+            toast.error("Algo deu errado, por favor, tente novamente!")
         }
     }
 

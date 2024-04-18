@@ -32,20 +32,23 @@ const Formulario = () => {
     const lead = {
       nome,
       tel:telefone,
-      email:email,
+      email:email? email: "Email não informado",
       envCliente: false,
       observ:`Sem comentários`,
     }
     
-    // if(await retornoUmLead(telefone)){
-    // toast.error(
-    //   "Ops! Parece que você já resgatou seu cupom e está participando da nossa promoção. Se precisar de ajuda ou tiver dúvidas, entre em contato conosco."
-    // )
-    // } else {
-    createLead(13, lead)
+     if(await retornoUmLead(telefone)){
+      toast.success(
+      "Obrigado pelo cadastro, seus dados já se encontra em nossa base de dados."
+      )
+      reset()
+
+    } else {
+    await createLead("13", lead)
+    
     setNome(nome) 
     setCupom(true)
-    // }
+     }
   }
 
     return(
@@ -97,7 +100,7 @@ const Formulario = () => {
          </div>
          <div className="mb-3">
              <InputCadastro
-             label="Email"
+             label="Email(opcional)"
              id="email"
              type="text" 
              placeholder='exemplo@exemplo.com' 
