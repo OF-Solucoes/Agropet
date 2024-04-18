@@ -32,7 +32,7 @@ const Formulario = () => {
     const lead = {
       nome,
       tel:telefone,
-      email:"não usado",
+      email:email,
       envCliente: false,
       observ:`Sem comentários`,
     }
@@ -42,7 +42,7 @@ const Formulario = () => {
     //   "Ops! Parece que você já resgatou seu cupom e está participando da nossa promoção. Se precisar de ajuda ou tiver dúvidas, entre em contato conosco."
     // )
     // } else {
-    // createLead(2, lead)
+    createLead(13, lead)
     setNome(nome) 
     setCupom(true)
     // }
