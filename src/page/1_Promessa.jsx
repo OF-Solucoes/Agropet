@@ -27,19 +27,32 @@ const Promessas = () =>{
         <div className="flex flex-col sm:flex-row items-center justify-center ">
             <div className="max-w-[508px] md:mr-20">
             <img  src={logo} alt='logo' />
-            <h1 className="font-hanken-grotesk mr-4 ml-4 text-white text-2xl font-bold text-justify  
+            <p className="font-hanken-grotesk mr-4 ml-4 text-white text-3xl font-bold text-justify  
             animate-slide-down-05">
-                    Aqui você encontra uma Variedade de produtos Exclusivos e de Alta Qualidade para seus Pets, com atendimento excepcional e experiência de compra segura.
-                    </h1>
+                    Proporcione o melhor para seu Pet sem sair de casa com a Agropet
+
+                    </p>
                     <br/>
-                    <br/>
-                    <h1 className="font-hanken-grotesk mr-4 ml-4 text-amarelo-claro text-2xl font-bold text-justify  
+                   
+            <p className="font-hanken-grotesk mr-4 ml-4 text-amarelo-claro text-2xl font-bold text-justify  
             animate-slide-down-05">
-                    Registre-se agora e seja o primeiro a receber nossas exclusivas promoções!
-                    </h1>
-                  <BotaoAcao texto="Quero promoções" />
-       <div className="flex flex-row  items-center justify-center ">
-        </div >
+                     Seja parte do nosso Clube VIP e desfrute de benefícios incríveis, como descontos irresistíveis, brindes especiais e a chance de ser o primeiro a conhecer nossos lançamentos. Inscreva-se agora!
+                    </p>
+                    
+             <button id='vip' onClick={() =>  window.open("https://chat.whatsapp.com/Ldh5SeZwtb70OZViZ1yluG", "_black")} 
+                                        className=' bg-primary-orange   text-white 
+                                        rounded-full
+                                        md: w-[230px]
+                                        md: h-[50px]
+                                         m-6 
+                                        border-2 border-white
+                                        shadow-md
+                                        mx-auto block
+                                        hover:-translate-y-1
+                                        hover:scale-110
+                                        hover:bg-primary-focus duration-300'>
+                    Junte-se ao grupo vip!
+                </button> 
            
             </div>
             

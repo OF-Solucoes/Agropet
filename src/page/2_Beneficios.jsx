@@ -51,11 +51,8 @@ const Beneficios = () => {
                         animate__animated ${showAnimation ? 'animate-slide-Left-05' : ''}`} />
                         <p className={`text-center p-2 text-2xl text-marron
                              animate__animated ${showAnimation ? 'animate-slide-Left-05' : ''}`}>
-                          Bem-vindo à Agropet Conceição! Oferecemos uma ampla seleção
-                          de produtos para pets, incluindo rações nutritivas e acessórios essenciais. 
-                          Nosso compromisso é proporcionar uma experiência de compra excepcional, 
-                          cuidando do bem-estar e da felicidade do seu companheiro peludo. 
-                          Descubra como podemos fazer a diferença na vida do seu pet!  
+                          Seja parte de uma comunidade dedicada ao bem-estar dos pets. Descubra como cada produto
+                           é selecionado para trazer alegria e vitalidade aos nossos amigos de quatro patas!  
 
                         </p>
                         <img ref={item} src={patas} alt='patas' className='float-right ml-1 hidden sm:block' />
